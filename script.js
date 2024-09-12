@@ -61,7 +61,7 @@ const dDay = new Date('2024-10-07'); //2024-11-07임
 const year = today.getFullYear(); // 년도
 const month = today.getMonth() + 1; // 월
 const date = today.getDate(); // 날짜
-const day = ["일", "월", "화", "수", "목", "금", "토"][today.getDay() - 1]; // 요일
+const day = ["일", "월", "화", "수", "목", "금", "토"][today.getDay()]; // 요일
 
 const day_gap = dDay - today;
 const leftDay = Math.floor(day_gap / (1000*60*60*24)) + 1;
